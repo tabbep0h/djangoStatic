@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <title>djangoStatic</title>
+  </head>
+
+  <body>
+    {% include 'header.html' %}
+
+    <div class="banner">
+      <div class="container">
+        <div class="banner__wrap">
+          <div class="block">
+            <p class="title__up">— Стоматология в Чебоксарах</p>
+            <p class="title__up-down">Лечение зубов в тот же день</p>
+            <p class="title__down">
+              Мы проведем полную консультацию, профессиональную гигиену полости рта, лечение зубов и
+              десен
+            </p>
+            <button class="order1-call__btn blue-button">Записаться на приём</button>
+          </div>
+          <div class="banner__cards">
+            <p class="card__left card">Команда квалифицированных специалистов</p>
+            <p class="card__center card">3 стоматологических<br />кабинета</p>
+            <p class="card__right card">
+              Удобное<br />
+              расположение
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="services">
+      <div class="container">
+        <div class="service__wrap">
+          <p class="service__title">Услуги</p>
+          <p class="service__subtitle">
+            Мы постарались сделать прайс,максимально простым и понятным.
+          </p>
+          <div class="service-cards__block">
+            <div class="card__block">
+              <img class="card__img" alt="img" src = {% static "img/Group 22.png" %}>
+              <p class="card__text">Лечение зубов</p>
+            </div>
+            <div class="card__block">
+              <img class="card__img" alt="img" src = {% static "img/Group 23.png" %}>
+              <p class="card__text">Гигиена</p>
+            </div>
+            <div class="card__block">
+              <img class="card__img" alt="img" src = {% static "img/Group 24.png" %}>
+              <p class="card__text">Брекеты</p>
+            </div>
+            <div class="card__block">
+              <img class="card__img" alt="img" src = {% static "img/Group 25.png" %}>
+              <p class="card__text">Детская стоматология</p>
+            </div>
+            <div class="card__block">
+              <img class="card__img" alt="img" src = {% static "img/Group 31.png" %}>
+              <p class="card__text">Импланты </p>
+            </div>
+            <div class="card__block grid__plug">Заглушка грида</div>
+            <div class="card__block">
+              <img class="card__img" alt="img" src = {% static "img/Group 46.png" %}>
+              <p class="card__text">Виниры</p>
+            </div>
+            <div class="card__block">
+              <img class="card__img" alt="img" src = {% static "img/Group 26.png" %}>
+              <p class="card__text">Коронки</p>
+            </div>
+            <div class="card__block">
+              <img class="card__img" alt="img" src = {% static "img/Group 29.png" %}>
+              <p class="card__text">Хирургия</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="feedback">
+      <div class="container">
+        <div class="feedback__wrap">
+          <p class="feedback__title">Нам доверяют пациенты</p>
+          <div class="feedback__blocks">
+            <div class="feedback__block">
+              <p class="number-block">1</p>
+              <p class="title-block">Честные цены, без хитрых уловок</p>
+              <p class="subtitle-block title-block1">Фиксируем цены в плане лечения, не повышаем в процессе.</p>
+            </div>
+            <div class="feedback__block">
+              <p class="number-block">2</p>
+              <p class="title-block">Опытные Врачи</p>
+              <p class="subtitle-block title-block2">Врачи постоянно совершенствуются в своей специальности, несмотря на богатый опыт работы.</p>
+            </div>
+            <div class="feedback__block">
+              <p class="number-block">3</p>
+              <p class="title-block">Комфортные условия</p>
+              <p class="subtitle-block title-block2">Уютная обстановка и отзывчивый персонал сделают поход к стоматологу максимально приятным. 
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="form">
+        <div class="form__wrap">
+          <div class="form__block">
+            <p class="form__title">При фиксации брекетов на обе челюсти получи сертификат на 7000 рублей</p>
+            <p class="form__subtitle">Укажите вой номер телефона, мы перезвоним и подберем для вас удобное время приёма.
+              Или позвоните нам сами — <span>+7 900 333 10 40</span></p>
+            <div class = "block__input">
+              <input type="text" class="input-form" placeholder="Телефон">
+              <button class = "form__btn blue-button">Записаться на прием</button>
+            </div>
+              <p class="text__down">Записываясь на услугу вы даёте согласие на <span>обработку<br> своих персональных данных</span></p>
+            <img src="{% static "img/call1.png" %}" class = "wom_img" alt="img">
+          </div>
+        </div>    
+    </div>
+    <div class="heal">
+      <div class="container">
+        <div class="heal__wrap">
+          <div class="heal__block">
+              <p class="heal-block__title">Лечение у нас</p>
+              <p class="heal-block__subtitle">Просто и безболезненно, с предоставлением всего спектра стоматологических услуг</p>
+              <p class="heal-block__subsubtitle">клиника</p>
+              <p class="categories">предоставляет весь спектр 
+                стоматологических услуг таких как : </p>
+              <div class="categories__block">
+                <p class="category box-a">Терапия </p>
+                <p class="category box-b">Хирургия </p>
+                <p class="category box-c">Ортодонтия </p>
+                <p class="category box-d">Детская стоматология</p>
+                <p class="category box-e">Ортопедия</p>
+              </div>
+              <p class="heal-block__text">Приоритетным направлением является восстановление функциональных возможностей зубочелюстной системы 
+                и профилактика заболевания полости рта.</p>
+              <img src="{% static "img/voxel.png" %}" class = "img__heal" alt="logo">
+              <img src="{% static "img/ortholight.png" %}" class = "img__heal" alt="logo">
+              <img src="{% static "img/Rocada-logo.jpg" %}" class = "img__heal" alt="logo">
+          </div>
+          <img src="{% static "img\portrait-dentist-taking-selfie-with-patient 2.png" %}" class = "heal__img" alt="img">
+        </div>
+    </div>
+    </div>
+    <div class="specs">
+      <div class="container">
+        <div class="feedback__wrap">
+              <p class="specs__title">Специалисты</p>
+              <p class="specs__subtitle">Просто и безболезненно, с предоставлением всего спектра стоматологических услуг</p>
+              <div class="specs__cards">
+                <div class="card_exp">
+                  <div class = "card_exp-text"> 
+                    <p class="card__name">Шац Дарья<br>Сергеевна</p>
+                    <p class="card__subname">Директор, Главный врач , Врач ортодонт</p>
+                    <p class="work__exp">Стаж работы 11 лет </p>
+                  </div>
+                    <img class = "work__exp-img" src="{% static "img/beautiful-young-woman-doctor-posing-white-medical-gown_1-removebg 2.png" %}" alt="">
+                </div>
+                <div class="card_exp">
+                  <div class = "card_exp-text"> 
+                    <p class="card__name">Оленина Марина<br>
+                      Николаевна </p>
+                    <p class="card__subname">Зам директора, Врач стоматолог терапевт</p>
+                    <p class="work__exp">Стаж работы более 25 лет  </p>
+                   </div> 
+                   <img class = "work__exp-img" src="{% static "img/beautiful-young-woman-doctor-posing-white-medical-gown_1-removebg 2.png" %}" alt="">
+                </div>
+                <div class="card_exp">
+                  <div class = "card_exp-text"> 
+                    <p class="card__name">Лыщиков Павел<br>
+                      Анатольевич</p>
+                    <p class="card__subname">Врач стоматолог ортопед, хирург-имплантолог</p>
+                    <p class="work__exp">Стаж работы более 15 лет </p>
+                  </div>
+                  <img class = "work__exp-img" src="{% static "img/dentist-man-holding-tools-isolated-white-wall-laughing 2.png" %}" alt="">
+                </div>
+                <div class="card_exp">
+                  <div class = "card_exp-text"> 
+                    <p class="card__name">Жирнов Дмитрий<br>
+                      Александрович </p>
+                    <p class="card__subname">Врач стоматолог ортопед, хирург-имплантолог</p>
+                    <p class="work__exp">Стаж более 10 лет</p>
+                  </div>
+                  <img class = "work__exp-img" src="{% static "img/dentist-man-holding-tools-isolated-white-wall-laughing 2.png" %}" alt="">
+                </div>
+                <div class="card_exp">
+                  <div class = "card_exp-text"> 
+                    <p class="card__name">Терушкина Елена<br>
+                      Дмитриевна</p>
+                    <p class="card__subname">Врач стоматолог детский</p>
+                    <p class="work__exp">Стаж работы более 10 лет</p>
+                  </div>
+                  <img class = "work__exp-img" src="{% static "img/dentist-man-holding-tools-isolated-white-wall-laughing 2.png" %}" alt="">
+                </div>
+              </div>
+              <p class="specs__title ty">Сертификаты, награды и дипломы</p>
+              <div class="sert__block">
+                <img src="{% static "img/13252040621aca4547cf2323c2b774ce2f89eb 1.jpg" %}" alt="img">
+                <img src="{% static "img/13252040621aca4547cf2323c2b774ce2f89eb 1.jpg" %}" alt="img">
+                <img src="{% static "img/13252040621aca4547cf2323c2b774ce2f89eb 1.jpg" %}" alt="img">
+              </div>
+        </div>
+      </div>
+    </div>
+    <div class="form">
+      <div class="form__wrap">
+        <div class="form__block">
+          <p class="form__title">Онлайн консультация специалиста 
+            по аудио и видео связи, Бесплатно.
+            </p>
+          <p class="form__subtitle">Укажите вой номер телефона, мы перезвоним и подберем для вас удобное время приёма.
+            Или позвоните нам сами — <span>+7 900 333 10 40</span></p>
+          <div class = "block__input">
+            <input type="text" class="input-form" placeholder="Телефон">
+            <button class = "form__btn blue-button">Записаться на прием</button>
+          </div>
+            <p class="text__down">Записываясь на услугу вы даёте согласие на <span>обработку<br> своих персональных данных</span></p>
+          <img src="{% static "img/call2.png" %}" class = "wom_img1" alt="img">
+        </div>
+      </div>    
+  </div>
+  
+    {% include 'footer.html' %}
+  </body>
+</html>
